@@ -1,0 +1,604 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Library.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Library.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+CAPTION "关于 Library"
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    LTEXT           "Library 1.0 版",IDC_STATIC,54,13,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013 HIT 1237104",IDC_STATIC,54,24,119,8
+    LTEXT           "吕家明 郭高扬 韦振良",IDC_STATIC,54,55,161,14
+    LTEXT           "847383158@qq.com",IDC_STATIC,54,68,85,9
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP,7,7,43,34
+    LTEXT           "jasonlvhit@gmail.com",IDC_STATIC,54,78,73,8
+END
+
+IDD_LIBRARY_DIALOG DIALOGEX 0, 0, 411, 216
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_APPWINDOW
+CAPTION "HIT LIBRARY"
+FONT 9, "微软雅黑", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "帮助？(&H)",ID_HELP,247,163,50,14
+    LTEXT           "密码",IDC_STATIC,50,106,27,10
+    LTEXT           "您的邮箱Email",IDC_STATIC,50,80,37,17
+    EDITTEXT        IDC_EDIT_READER,89,80,83,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_READERCODE,89,104,82,12,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "读者登录区",IDC_STATIC,41,65,146,103
+    PUSHBUTTON      "登录",IDC_BUTTON_LOG,111,144,50,14
+    LTEXT           "还没有账户吗？",IDC_STATIC,57,176,50,9
+    PUSHBUTTON      "加入我们 注册",IDC_BUTTON_REGISTER,115,173,50,14
+    DEFPUSHBUTTON   "@关于我们",IDC_BUTTON_ABOUT,316,163,50,14
+    LTEXT           "如果你是我们的管理员：",IDC_STATIC,232,112,77,12
+    PUSHBUTTON      "管理员登录",IDC_BUTTON_ADMINLOG,308,131,50,18
+    LTEXT           "忘记密码？请点击帮助键",IDC_STATIC,81,125,76,8
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,262,128,30,24
+    CONTROL         151,IDC_STATIC,"Static",SS_BITMAP,8,7,191,54
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,196,7,23,197
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,207,7,196,92
+    CONTROL         154,IDC_STATIC,"Static",SS_BITMAP,8,193,397,16
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,384,7,21,199
+    CONTROL         150,IDC_STATIC,"Static",SS_BITMAP,8,8,27,199
+END
+
+IDD_DIALOG_ADMINLOG DIALOGEX 0, 0, 230, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员登录"
+FONT 10, "微软雅黑", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,109,93,43,11
+    PUSHBUTTON      "取消",IDCANCEL,169,93,42,11
+    LTEXT           "用户名",IDC_STATIC,97,33,39,15
+    EDITTEXT        IDC_EDIT_ADMINNAME,141,32,67,12,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,98,56,34,12
+    EDITTEXT        IDC_EDIT_ADMINCODE,141,54,67,12,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "登录",IDC_STATIC,86,16,131,71
+    LTEXT           "忘记密码？请查看",IDC_STATIC,129,72,53,8
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,15,19,37,44
+    PUSHBUTTON      "帮助",IDC_BUTTON_LOG_HELP,185,72,18,9
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,34,28,45,53
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP,23,40,42,48
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 329, 187
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新朋友欢迎你"
+FONT 10, "微软雅黑", 0, 0, 0x0
+BEGIN
+    LTEXT           "欢迎您注册HIT Library",IDC_STATIC,155,7,110,12
+    LTEXT           "我们需要您的一些信息，我们会认真保管您的信息以保证您的隐私安全",IDC_STATIC,155,25,141,21
+    GROUPBOX        "基本信息",IDC_STATIC,155,46,160,110
+    LTEXT           "用户名",IDC_STATIC,174,61,37,9
+    EDITTEXT        IDC_EDIT_REGISTERNAME,229,59,72,12,ES_AUTOHSCROLL
+    LTEXT           "邮箱",IDC_STATIC,175,76,14,8
+    EDITTEXT        IDC_EDIT_MAIL,229,74,73,12,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,175,91,20,9
+    EDITTEXT        IDC_EDIT_REGISTERCODE,229,89,72,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "确认密码",IDC_STATIC,175,107,27,8
+    EDITTEXT        IDC_EDIT_REGISTERCODE_CONFIRM,229,105,72,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "注册",IDC_BUTTON_OKTODETAIL,180,163,40,12
+    LTEXT           "兴趣爱好",IDC_STATIC,176,124,27,8
+    EDITTEXT        IDC_EDIT_REGISTERINTEREST,228,122,72,12,ES_AUTOHSCROLL
+    LTEXT           "专攻",IDC_STATIC,176,139,14,8
+    EDITTEXT        IDC_EDIT_REGISTERMAJOR,228,137,72,12,ES_AUTOHSCROLL
+    LTEXT           "*",IDC_STATIC,219,61,8,9
+    LTEXT           "*",IDC_STATIC,219,75,8,9
+    LTEXT           "*",IDC_STATIC,219,90,8,9
+    LTEXT           "*",IDC_STATIC,219,106,8,9
+    PUSHBUTTON      "取消",IDC_BUTTON_REGISTER_CANCEL,253,162,38,12
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP,15,22,46,55
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,95,33,46,55
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP,7,97,42,48
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,63,107,45,53
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,29,96,37,44
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,78,76,45,56
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,37,39,60,73
+END
+
+IDD_DIALOG_USER DIALOGEX 0, 0, 435, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HIT Library"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "User",IDC_STATIC,262,46,154,91
+    PUSHBUTTON      "管理个人信息",IDC_BUTTONRESERVE,275,76,135,15
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,18,234,117
+    LTEXT           "欢迎您来到哈尔滨工业大学图书馆管理系统客户端",IDC_STATIC,261,18,151,8
+    LTEXT           "在这里，您可以管理个人信息并预约图书",IDC_STATIC,262,31,127,8
+    LTEXT           "图书名称",IDC_STATIC,35,161,28,8
+    LTEXT           "作者",IDC_STATIC,35,180,15,8
+    LTEXT           "年份",IDC_STATIC,34,198,15,8
+    EDITTEXT        IDC_EDIT1,77,159,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,77,178,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,77,197,77,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "续借",IDC_BUTTON1,311,158,101,13
+    PUSHBUTTON      "+1",IDC_BUTTON2,312,176,99,12
+    GROUPBOX        "所持图书信息",IDC_STATIC,17,139,401,83
+    PUSHBUTTON      "注销账户",IDC_BUTTONDESTROY,275,96,133,14
+    PUSHBUTTON      "查看图书推介",IDC_BUTTON3,275,117,132,14
+    LTEXT           "借出日期",IDC_STATIC,177,160,28,8
+    LTEXT           "应还日期",IDC_STATIC,177,179,28,8
+    PUSHBUTTON      "图书查询",IDC_BUTTONSEARCH2,275,56,135,14
+    EDITTEXT        IDC_EDIT9,219,158,79,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,219,176,80,12,ES_AUTOHSCROLL
+    CONTROL         178,IDC_STATIC,"Static",SS_BITMAP,351,189,61,28
+    EDITTEXT        IDC_EDIT4,218,195,81,12,ES_AUTOHSCROLL
+    LTEXT           "热度",IDC_STATIC,177,197,15,8
+END
+
+IDD_DIALOG_ADMIN DIALOGEX 0, 0, 327, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "创建管理员",IDC_BUTTON_CREATEADMIN,195,95,107,17
+    PUSHBUTTON      "读者信息管理",IDC_BUTTON_USERINFO,195,66,107,18
+    PUSHBUTTON      "图书信息管理",IDC_BUTTON_BOOKMANAGE,195,37,107,17
+    GROUPBOX        "选项",IDC_STATIC,185,23,126,105
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,9,19,171,22
+    CONTROL         177,IDC_STATIC,"Static",SS_BITMAP,27,43,140,86
+END
+
+IDD_DIALOG_USERINFORMATION DIALOGEX 0, 0, 351, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "个人信息"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,11,314,59
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,174,130,121,14
+    LTEXT           "用户名",IDC_STATIC,173,94,22,8
+    EDITTEXT        IDC_EDIT_USERNAME,203,91,91,13,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,28,93,15,8
+    LTEXT           "兴趣",IDC_STATIC,174,112,15,8
+    EDITTEXT        IDC_EDIT_INTEREST,61,92,92,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJOR,203,110,92,12,ES_AUTOHSCROLL
+    LTEXT           "专攻",IDC_STATIC,28,111,15,8
+    EDITTEXT        IDC_EDIT1,62,110,92,12,ES_AUTOHSCROLL
+    GROUPBOX        "编辑个人信息",IDC_STATIC,11,79,313,73
+END
+
+IDD_DIALOG_MANAGEBOOK DIALOGEX 0, 0, 462, 315
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书管理"
+FONT 10, "华文细黑", 400, 0, 0x86
+BEGIN
+    LTEXT           "图书查询",IDC_STATIC,23,20,33,8
+    EDITTEXT        IDC_EDIT_SEARCH,23,55,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO!",IDC_BUTTON_GO,102,55,41,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,38,247,50,14
+    PUSHBUTTON      "保存编辑",IDC_BUTTON_EDIT,37,273,50,14
+    PUSHBUTTON      "返回所有图书列表",IDC_BUTTON_ALL,23,76,119,15
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,99,247,50,14
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,176,24,263,275
+    GROUPBOX        "选项",IDC_STATIC,22,233,136,66
+    GROUPBOX        "图书信息",IDC_STATIC,23,100,134,130
+    LTEXT           "图书名称",IDC_STATIC,37,118,33,8
+    EDITTEXT        IDC_EDIT_TITLE,81,116,66,13,ES_AUTOHSCROLL
+    LTEXT           "作者",IDC_STATIC,37,136,17,8
+    EDITTEXT        IDC_EDIT_AUTHOR,81,133,66,14,ES_AUTOHSCROLL
+    LTEXT           "出版年",IDC_STATIC,37,154,25,8
+    EDITTEXT        IDC_EDIT_YEAR,81,152,67,14,ES_AUTOHSCROLL
+    LTEXT           "类别",IDC_STATIC,37,175,17,8
+    EDITTEXT        IDC_EDIT_CLASSIFACATION,81,172,67,14,ES_AUTOHSCROLL
+    LTEXT           "是否在馆",IDC_STATIC,36,196,33,8
+    EDITTEXT        IDC_EDIT_AV,81,192,67,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,23,31,120,112,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空",IDC_BUTTON_CLEAN,100,273,50,14
+    LTEXT           "热度",IDC_STATIC,37,214,17,8
+    EDITTEXT        IDC_EDIT_HIT,81,211,67,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SEARCH DIALOGEX 0, 0, 426, 226
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书查询"
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,135,14,275,196
+    EDITTEXT        IDC_EDIT_SEARCH,17,42,61,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO!",IDC_BUTTON_SEARCH,84,43,34,11
+    COMBOBOX        IDC_COMBO1,17,25,100,77,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "返回所有图书列表",IDC_BUTTON_ALL,17,59,101,11
+    GROUPBOX        "图书查询",IDC_STATIC,10,11,117,66
+    GROUPBOX        "图书信息",IDC_STATIC,10,80,117,132
+    LTEXT           "书名",IDC_STATIC,19,93,14,8
+    LTEXT           "作者",IDC_STATIC,19,108,14,8
+    EDITTEXT        IDC_EDIT1,55,91,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,55,107,59,12,ES_AUTOHSCROLL
+    LTEXT           "出版年份",IDC_STATIC,19,125,27,8
+    EDITTEXT        IDC_EDIT3,55,123,59,12,ES_AUTOHSCROLL
+    LTEXT           "种类",IDC_STATIC,19,140,14,8
+    LTEXT           "是否在馆",IDC_STATIC,19,157,27,8
+    EDITTEXT        IDC_EDIT4,55,139,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,55,156,59,12,ES_AUTOHSCROLL
+    LTEXT           "--------------------------------------------------",IDC_STATIC,15,182,105,8
+    PUSHBUTTON      "预约",IDC_BUTTON_RESERVE,18,193,97,11
+    LTEXT           "热度",IDC_STATIC,19,173,14,8
+    EDITTEXT        IDC_EDIT6,55,172,58,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CREATEADMIN DIALOGEX 0, 0, 315, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建新管理员"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    LTEXT           "管理员姓名",IDC_STATIC,172,34,41,8
+    LTEXT           "密码",IDC_STATIC,173,55,22,8
+    GROUPBOX        "录入信息",IDC_STATIC,158,16,135,96
+    LTEXT           "确认密码",IDC_STATIC,173,77,33,8
+    EDITTEXT        IDC_EDIT_NAME,229,32,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,230,52,51,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM,230,74,51,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "创建",IDC_BUTTON_ADD,172,94,109,14
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,27,24,51,60
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP,75,39,48,54
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,43,36,53,61
+END
+
+IDD_INSERTBOOK DIALOGEX 0, 0, 437, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入图书"
+FONT 10, "华文细黑", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,155,20,271,233
+    LTEXT           "作者",IDC_STATIC,33,67,17,8
+    LTEXT           "种类",IDC_STATIC,33,114,17,8
+    LTEXT           "书名",IDC_STATIC,33,44,17,8
+    LTEXT           "出版年份",IDC_STATIC,33,89,33,8
+    LTEXT           "是否在馆",IDC_STATIC,32,158,33,8
+    LTEXT           "热度",IDC_STATIC,33,135,17,8
+    EDITTEXT        IDC_EDIT1,71,41,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,71,64,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,71,87,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,71,111,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,71,134,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,71,156,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "导入",IDC_BUTTON1,33,226,103,14
+    GROUPBOX        "图书信息",IDC_STATIC,17,21,130,233
+    LTEXT           "借出日期",IDC_STATIC,32,182,33,8
+    LTEXT           "应还日期",IDC_STATIC,32,206,33,8
+    EDITTEXT        IDC_EDIT6,72,180,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,72,203,64,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_RECOMMEND DIALOGEX 0, 0, 435, 221
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书推介"
+FONT 9, "华文细黑", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,139,18,275,186
+    GROUPBOX        "图书信息",IDC_STATIC,15,17,107,189
+    LTEXT           "书名",IDC_STATIC,27,36,17,8
+    EDITTEXT        IDC_EDIT1,24,51,90,14,ES_AUTOHSCROLL
+    LTEXT           "作者",IDC_STATIC,27,70,17,8
+    EDITTEXT        IDC_EDIT2,24,85,89,14,ES_AUTOHSCROLL
+    LTEXT           "出版年",IDC_STATIC,27,107,25,8
+    EDITTEXT        IDC_EDIT3,24,121,88,14,ES_AUTOHSCROLL
+    LTEXT           "热度",IDC_STATIC,27,141,17,8
+    EDITTEXT        IDC_EDIT4,25,154,87,14,ES_AUTOHSCROLL
+    LTEXT           "---------------------------------------",IDC_STATIC,24,174,89,8
+    PUSHBUTTON      "预约图书",IDC_BUTTON_RESERVE,25,185,86,14
+END
+
+IDD_DIALOG_READERINFOMANAGE DIALOGEX 0, 0, 415, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "读者信息管理"
+FONT 10, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,142,16,254,121
+    GROUPBOX        "读者信息",IDC_STATIC,15,16,111,145
+    LTEXT           "邮箱",IDC_STATIC,23,32,17,8
+    LTEXT           "用户名",IDC_STATIC,23,50,25,8
+    LTEXT           "密码",IDC_STATIC,23,69,17,8
+    LTEXT           "兴趣爱好",IDC_STATIC,22,86,33,8
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,142,141,254,79
+    LTEXT           "专攻",IDC_STATIC,24,105,17,8
+    LTEXT           "余额",IDC_STATIC,24,121,17,8
+    EDITTEXT        IDC_EDIT_F,55,120,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJOR,55,103,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INTEREST,55,86,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,55,68,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,54,49,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_E_MAIL,54,31,65,12,ES_AUTOHSCROLL
+    GROUPBOX        "借阅情况",IDC_STATIC,14,167,115,53
+    PUSHBUTTON      "导入图书",IDC_BUTTON_ADD,28,182,88,12
+    PUSHBUTTON      "删除此用户",IDC_BUTTON_DELETE,21,140,97,12
+    PUSHBUTTON      "导出图书",IDC_BUTTON_OUT,28,201,89,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "1123710410 Jason Lv"
+            VALUE "FileDescription", "Library Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Library"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "Library.EXE"
+            VALUE "ProductName", "Library 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_LIBRARY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_DIALOG_ADMINLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_ADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG_USERINFORMATION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 344
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_MANAGEBOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 419
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_DIALOG_CREATEADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_INSERTBOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_DIALOG_RECOMMEND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_DIALOG_READERINFOMANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\3.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP4             BITMAP                  "res\\000.bmp"
+IDB_BITMAP_ABOUT        BITMAP                  "res\\HIT.bmp"
+IDB_BITMAP5             BITMAP                  "res\\blank.bmp"
+IDB_BITMAP_TITLE        BITMAP                  "res\\title.bmp"
+IDB_BITMAP_BLANK2       BITMAP                  "res\\BLANK2.bmp"
+IDB_BITMAP6             BITMAP                  "res\\BLANK3.bmp"
+IDB_BITMAP_ADMIN        BITMAP                  "res\\admin.bmp"
+IDB_BITMAP_MANAGER      BITMAP                  "res\\Mananger.bmp"
+IDB_BITMAP_BOOK1        BITMAP                  "res\\book1.bmp"
+IDB_BITMAP_BOOK2        BITMAP                  "res\\book2.bmp"
+IDB_BITMAP_BOOK3        BITMAP                  "res\\book3.bmp"
+IDB_BITMAP_BOOK4        BITMAP                  "res\\book4.bmp"
+IDB_BITMAP_BOOK5        BITMAP                  "res\\BOOK5.bmp"
+IDB_BITMAP_BOOK6        BITMAP                  "res\\BOOK6.bmp"
+IDB_BITMAP_BOOK7        BITMAP                  "res\\BOOK7.bmp"
+IDB_BITMAP_BACKGROUNDLEFT BITMAP                  "res\\backgroundleft.bmp"
+IDB_BITMAP_BACKGROUNDTOPLEFT BITMAP                  "res\\backgroundtopleft.bmp"
+IDB_BITMAP_BACKGROUNDCENTER BITMAP                  "res\\BACKGROUNDCENTER.bmp"
+IDB_BITMAP_BACKGROUNDTOPRIGHT BITMAP                  "res\\BACKGROUNDTOPRIGHT.bmp"
+IDB_BITMAP_BACKGROUNDBELOW BITMAP                  "res\\BACKGROUNDBELOW.bmp"
+IDB_BITMAP_BACKGROUNDRIGHT BITMAP                  "res\\BACKGROUNDRIGHT.bmp"
+IDB_BITMAP7             BITMAP                  "res\\ad.bmp"
+IDB_BITMAP9             BITMAP                  "res\\bitmap9.bmp"
+IDB_BITMAP10            BITMAP                  "res\\bitmap10.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Library(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Library.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

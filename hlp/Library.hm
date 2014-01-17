@@ -1,0 +1,28 @@
+ 
+// Commands (ID_* and IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_LIBRARY_DIALOG                     0x20066
+HIDD_DIALOG_ADMINLOG                    0x20081
+HIDD_DIALOG_REGISTER                    0x20083
+HIDD_DIALOG_USER                        0x2009C
+HIDD_DIALOGPERSONALINFO                 0x2009E
+HIDD_DIALOGADMIN                        0x2009F
+HIDD_DIALOG_ADMIN                       0x2009F
+HIDD_DIALOG_USERINFORMATION             0x200A3
+HIDD_DIALOG_SE                          0x200A4
+HIDD_DIALOG_MANAGEBOOK                  0x200A4
+HIDD_DIALOG_SEARCH                      0x200A5
+HIDD_DIALOG_CREATEADMIN                 0x200A6
+HIDD_DIALOG_READERINFOMANAGE            0x200A7
+HIDD_INSERTBOOK                         0x200B3
+HIDD_DIALOG_RECOMMEND                   0x200B4
+ 
+// Frame Controls (IDW_*) 
